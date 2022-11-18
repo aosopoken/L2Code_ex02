@@ -1,0 +1,605 @@
+@font-face {
+    font-family: 'Sora';
+    src: url(./Sora-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    background-color: #060714;
+    height: auto;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.corpo {
+    padding: 20px 35px;
+    height: 100%;
+}
+
+.tigre {
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 12%;
+    height: 69px;
+    width: 69px;
+}
+
+.lobo {
+    position: absolute;
+    margin-top: 11%;
+    height: 69px;
+    width: 69px;
+    margin-left: 78%;
+}
+
+.elefante {
+    position: absolute;
+    margin-top: 32%;
+    margin-left: 19%;
+    height: 69px;
+    width: 69px;
+}
+
+.piriquito {
+    position: absolute;
+    height: 69px;
+    width: 69px;
+    margin-left: 80%;
+    margin-top: 27%;
+}
+
+.cavalo {
+    position: absolute;
+    height: 69px;
+    width: 69px;
+    margin-top: 40%;
+    margin-left: 5%;
+}
+
+.sapo {
+    position: absolute;
+    height: 69px;
+    width: 69px;
+    margin-top: 40%;
+    margin-left: 70%;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.cabecalho__menu__tipo {
+    width: 76px;
+    height: 20px;
+    color: #7780A1;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Sora';
+    margin-left: 2rem;
+}
+
+.cabecalho__botao {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.cabecalho__botao__contact {
+    cursor: pointer;
+    border: 1px solid #7780A1;
+    background-color: transparent;
+    border-color: #7780A1;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #7780A1;
+    border-radius: 8px;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.cabecalho__botao__account {
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: 'Sora';
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    background: linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%);
+    box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.informativo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18%;
+    margin-right: 18%;
+    align-items: center;
+    height: 800px;
+}
+
+.informativo__texto {
+    margin-top: 160px;
+}
+
+.informativo__token {
+    color: #7780A1;
+    font-family: 'Sora';
+    font-size: 13px;
+}
+
+.informativo__nft {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    font-size: 100px;
+    font-family: 'Sora';
+    font-weight: 600;
+}
+
+.informativo__nft__pink {
+    position: absolute;
+    margin-top: 4.4rem;
+}
+
+.informativo__nft__blue {
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+}
+
+.informativo__adicional {
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+}
+
+.informativo__discover {
+    color: #7780A1;
+    font-size: 16px;
+    font-family: 'Inter';
+}
+
+.informativo__icone {
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px;
+    justify-content: center;
+}
+
+.informativo__icone__ritter {
+    width: 35px;
+    height: 30px;
+}
+
+.informativo__icone__marca {
+    margin-left: 4rem;
+    width: 35px;
+    height: 30px;
+}
+
+.latest {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.latest__texto {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-family: 'Sora';
+    font-size: 25px;
+    font-style: normal;
+    margin-top: 96px;
+}
+
+.scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 100%;
+}
+
+.scroll__imagem::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll__imagem {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scroll__botao {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 400px;
+    margin-right: 60%;
+    border-color: transparent;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    background: rgba(38, 40, 64, 0.8);
+    box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
+    backdrop-filter: blur(3.5px);
+    color: white;
+    font-size: 36px;
+}
+
+.scroll__botao2 {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 60%;
+    border-color: transparent;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    background: rgba(38, 40, 64, 0.8);
+    box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
+    backdrop-filter: blur(3.5px);
+    color: white;
+    font-size: 36px;
+}
+
+.scroll__imagem__largura {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.scroll__imagem__borda {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e3e3e417;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    margin-left: 20px;
+    margin-top: 8%;
+}
+
+.scroll__imagem__cada {
+    height: 500px;
+    width: 420px;
+    border-radius: 10px;
+}
+
+.scroll__imagem__borda__texto {
+    margin-top: 10px;
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll__imagem__texto {
+    color: #FFFFFF;
+    font-size: 0.8rem;
+}
+
+.scroll__imagem__price {
+    background-color: rgba(81, 76, 255, 0.15);
+    border: 1px solid rgba(81, 76, 255, 0.15);
+    padding: 4px 2px 4px 2px;
+    height: 12px;
+    width: 50px;
+}
+
+.relogio {
+    height: 15px;
+    width: 15px;
+}
+
+.scroll__tempo {
+    margin-top: 20px;
+}
+
+.scroll__imagem__pessoas {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scroll__imagem__pessoas_bidding {
+    width: 190px;
+}
+
+.scroll__imagem__pessoas__coracao {
+    width: 10px;
+    height: 10px;
+    margin-left: 13px;
+}
+
+.scroll__imagem__pessoas__texto {
+    color: #7780A1;
+    font-size: 10px;
+}
+
+.overline {
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.overline__texto {
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+}
+
+.overline__texto__over {
+    font-family: 'Inter';
+    color: #7780A1;
+    margin-bottom: 0.5rem;
+    font-size: 11px;
+    margin-top: 4rem;
+}
+
+.overline__texto__sapien {
+    font-family: 'Sora';
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.overline__texto__amet {
+    font-family: 'Inter';
+    color: #7780A1;
+    font-size: 10px;
+}
+
+.overline__imagem__tinta {
+    height: 22rem;
+    width: 22rem;
+}
+
+.overline__texto__botao {
+    margin-top: 1.5rem;
+    font-family: 'Sora';
+}
+
+.overline__texto__botao__started {
+    cursor: pointer;
+    font-family: 'Sora';
+    font-size: 10px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 0.4rem 0.9rem 0.4rem 0.9rem;
+    background: linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%);
+    box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+}
+
+.overline__texto__botao__learn {
+    cursor: pointer;
+    border: 1px solid #7780A1;
+    background-color: transparent;
+    border-color: #7780A1;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #7780A1;
+    border-radius: 7px;
+    padding: 0.35rem 0.9rem 0.35rem 0.9rem;
+}
+
+.usuarios {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    border-top: 1px solid #7780a136;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 19rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.usuarios__opcoes {
+    display: flex;
+    flex-direction: row;
+}
+
+.usuario__opcoes__cada {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3.5rem;
+    margin-left: 3.5rem;
+    align-items: center;
+}
+
+.usuario__opcoes__cada__tipo {
+    width: 20px;
+    height: 20px;
+}
+
+.usuario__opcoes__cada__texto {
+    color: #FFFFFF;
+    font-family: 'Sora';
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.usuario__opcoes__cada__texto2 {
+    color: #7780A1;
+    font-family: 'Inter';
+    font-size: 11px;
+    margin-top: 0.6rem;
+}
+
+.market {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7rem;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+
+.market__borda__contorno {
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    width: 20rem;
+    border: 1px solid #7780a12c;
+}
+
+.market__borda__contorno__topo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.market__borda__contorno__imagem {
+    width: 25px;
+    height: 25px;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.market__borda__contorno__texto {
+    margin-left: 1rem;
+    color: #FFFFFF;
+    font-family: 'Sora';
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+.market__borda__baixo {
+    display: flex;
+    flex-direction: row;
+    color: #7780A1;
+    font-family: 'Inter';
+    font-size: 9px;
+    margin-top: 10rem;
+}
+
+.market__borda__baixo__texto {
+    margin-left: 1.5rem;
+    margin-right: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.market__borda__contorno__topo02 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.market__borda__contorno__texto02 {
+    text-decoration: none;
+    margin-left: 1rem;
+    color: #FFFFFF;
+    font-family: 'Sora';
+    font-size: 10px;
+    margin-top: 0.5rem;
+}
+
+.market__borda__contorno__botao01 {
+    cursor: pointer;
+    font-family: 'Sora';
+    font-size: 8px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 0.1rem 0.6rem 0.1rem 0.6rem;
+    background: linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%);
+    box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+}
+
+.market__borda__contorno__redes {
+    margin-left: 0.9rem;
+}
+
+.market__borda__contorno__redes__sociais {
+    width: 12px;
+    height: 12px;
+    margin-top: 3.5rem;
+    margin-left: 0.5rem;
+}
+
+.market__borda__contorno__topo03 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+    margin-top: 1.3rem;
+    text-align: justify;
+}
+
+.market__borda__contorno__texto03 {
+    color: #7780A1;
+    font-size: 10px;
+    font-family: 'Sora';
+}
+
+.market__borda__baixo02 {
+    display: flex;
+    flex-direction: row;
+}
+
+.market__borda__baixo__input {
+    background-color: #FFFFFF;
+    border-color: transparent;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+}
+
+.market__borda__baixo__botao {
+    background-color: #FFFFFF;
+    border-color: transparent;
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 7rem;
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .informativo__nft {
+        font-size: 70px;
+    }
+}
