@@ -6,4 +6,4 @@ Javascript contém uma função para mover o scroll no eixo X com um button com 
 
 Adicionei, também, alguns url direcionando aos sites das redes sociais.
 
-Versão mobile não funciona
+Não tive tempo para terminar o responsivo.
